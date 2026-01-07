@@ -5,82 +5,58 @@
 }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #fff7f9;
-    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #e8b4bc;
-    color: white;
+/* HEADER GERAL */
+.topo {
+    border-bottom: 1px solid #ddd;
+}
+
+/* LINHA DE CIMA */
+.topo-logo {
     text-align: center;
-    padding: 40px 20px;
+    padding: 25px 20px 10px;
 }
 
-header h1 {
-    font-size: 38px;
+.topo-logo h1 {
+    font-size: 34px;
+    color: #6d3b2e;
 }
 
-header p {
-    margin-top: 10px;
-    font-size: 18px;
+.topo-logo span {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #a87c6a;
 }
 
-/* Seções */
-section {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-section h2 {
-    color: #b56576;
-    margin-bottom: 15px;
-}
-
-/* Cards */
-.cards {
+/* LINHA DE BAIXO (MENU) */
+.topo-menu {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px 0 20px;
 }
 
-.card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    flex: 1;
-    min-width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-    margin-bottom: 10px;
-    color: #6d597a;
-}
-
-/* Botão */
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 25px;
-    background-color: #b56576;
-    color: white;
+.topo-menu a {
     text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s;
+    color: #333;
+    font-size: 16px;
+    position: relative;
 }
 
-.btn:hover {
-    background-color: #9d4edd;
+/* LINHA ANIMADA NO HOVER */
+.topo-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #6d3b2e;
+    transition: 0.3s;
 }
 
-/* Rodapé */
-footer {
-    background-color: #6d597a;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+.topo-menu a:hover::after {
+    width: 100%;
 }
