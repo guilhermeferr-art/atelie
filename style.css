@@ -24,9 +24,9 @@ body {
     color: #6d3b2e;
 }
 
-.topo-logo span {
-    font-size: 12px;
-    letter-spacing: 3px;
+.subtit {
+    font-size: 11px;
+    letter-spacing: 2px;
     color: #a87c6a;
 }
 
@@ -79,7 +79,7 @@ img{
     height: 100%;
     object-fit: contain;
 }
-span{
+.cat{
     position: absolute;
     top: 50%;
     left: 50%;
