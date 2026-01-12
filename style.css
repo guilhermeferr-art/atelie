@@ -8,12 +8,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER GERAL */
 .topo {
     border-bottom: 1px solid #ddd;
 }
 
-/* LINHA DE CIMA */
 .topo-logo {
     text-align: center;
     padding: 25px 20px 10px;
